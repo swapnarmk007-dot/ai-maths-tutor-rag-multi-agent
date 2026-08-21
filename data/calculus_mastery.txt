@@ -1,0 +1,25 @@
+Calculus & Integration Techniques Reference Guide
+Chapter 1: The Fundamental Theorem of Calculus
+The Fundamental Theorem of Calculus establishes the vital link between differentiation and integration.
+Part 1 states that if f is continuous on [a, b], then the function g(x) = ∫_{a}^{x} f(t) dt has derivative g'(x) = f(x).
+Part 2 states that ∫_{a}^{b} f(x) dx = F(b) - F(a), where F is any antiderivative of f such that F'(x) = f(x).
+
+Chapter 2: Integration by Parts
+The integration by parts formula is ∫ u dv = uv - ∫ v du.
+This technique is derived directly from the product rule of differentiation: d/dx(uv) = u'(x)v(x) + u(x)v'(x).
+When selecting which term to set as u, follow the LIATE priority rule:
+1. Logarithmic functions (e.g. ln(x))
+2. Inverse trigonometric functions (e.g. arctan(x))
+3. Algebraic functions (e.g. x^2, 3x)
+4. Trigonometric functions (e.g. sin(x), cos(x))
+5. Exponential functions (e.g. e^x, 2^x)
+
+Chapter 3: Taylor and Maclaurin Series
+A Taylor series represents a smooth function as an infinite sum of polynomial terms calculated from the values of its derivatives at a single point a:
+f(x) = f(a) + f'(a)(x - a) + (f''(a)/2!)(x - a)^2 + ... = ∑_{n=0}^{∞} (f^(n)(a) / n!) (x - a)^n
+When a = 0, the series is called a Maclaurin series.
+Essential Maclaurin expansions:
+- e^x = 1 + x + x^2/2! + x^3/3! + ... (Radius of convergence R = ∞)
+- sin(x) = x - x^3/3! + x^5/5! - ... (Radius of convergence R = ∞)
+- cos(x) = 1 - x^2/2! + x^4/4! - ... (Radius of convergence R = ∞)
+- 1/(1 - x) = 1 + x + x^2 + x^3 + ... (Radius of convergence |x| < 1)
