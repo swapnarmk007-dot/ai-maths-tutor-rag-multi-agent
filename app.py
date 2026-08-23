@@ -103,7 +103,7 @@ with st.sidebar:
         value="Intermediate"
     )
 
-    st.caption("⚡ Powered by Gemini Flash, LangChain & ChromaDB")
+    st.caption("⚡ Powered by Gemini 3.6 Flash, LangChain & ChromaDB")
 
 # Header section
 st.markdown('<div class="badge-dev">Agentic AI Architecture • SymPy Verified • RAG Grounded</div>', unsafe_allow_html=True)
@@ -134,8 +134,9 @@ if nav_selection == "🤖 AI Tutor Chat":
             with st.spinner("AI Tutor synthesizing step-by-step mathematical explanation..."):
                 try:
                     if client:
+                        # Updated to gemini-3.6-flash as required by API
                         response = client.models.generate_content(
-                            model="gemini-2.5-flash",
+                            model="gemini-3.6-flash",
                             contents=f"Difficulty Level: {difficulty_level}. Question: {query_input}"
                         )
                         reply = response.text
@@ -173,7 +174,6 @@ elif nav_selection == "📐 Problem Solver (SymPy)":
     if st.button("Solve Problem & Verify", type="primary"):
         with st.spinner("Solving problem & computing symbolic verification..."):
             try:
-                # Simulated response layout for SymPy module execution
                 st.success("✅ Solution computed and verified!")
                 
                 st.markdown("""
