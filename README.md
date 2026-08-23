@@ -216,6 +216,8 @@ Every calculation processed by the **Math Solver Agent** is routed through a dua
 2. **CAS Symbolic Check**: The solver runs SymPy code to verify boundary conditions, integrals, derivatives, and matrix eigenvalues, returning a `VERIFIED_EXACT` certification badge.
 
 ---
+## 🚀 Live Demo
+https://ai-maths-tutor---rag---multi-agent-assistant-qkmagffge4p8egrnc.streamlit.app/
 
 ## 🏆 Portfolio Contact
 
